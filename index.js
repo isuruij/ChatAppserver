@@ -8,7 +8,12 @@ const host = '0.0.0.0';
 
 const server = http.createServer(app);
 
-const io = new Server(server);
+const io = new Server(server, {
+  cors: {
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST"],
+  },
+});
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
@@ -34,5 +39,5 @@ app.get('/test', (req, res) => {
 });
 
 server.listen(3000,host, () => {
-  console.log("SERVER RUNNING ON PORT 3000....test...yyyy....");
+  console.log("SERVER RUNNING ON PORT 3000....test.......");
 });
