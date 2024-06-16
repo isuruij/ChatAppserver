@@ -4,7 +4,7 @@ const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
 app.use(cors());
-
+const host = '0.0.0.0';
 
 const server = http.createServer(app);
 
@@ -37,6 +37,6 @@ app.get('/test', (req, res) => {
   res.send('Hello, world!');
 });
 
-server.listen(3003, () => {
-  console.log("SERVER RUNNING ON PORT 3003 ");
+server.listen(3000,host, () => {
+  console.log("SERVER RUNNING ON PORT 3000,,,,,,,,,,,,,,,");
 });
