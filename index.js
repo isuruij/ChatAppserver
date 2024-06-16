@@ -37,6 +37,6 @@ app.get('/test', (req, res) => {
   res.send('Hello, world!');
 });
 
-server.listen(3003,host, () => {
+server.listen(3003, () => {
   console.log("SERVER RUNNING ON PORT 3003 ");
 });
