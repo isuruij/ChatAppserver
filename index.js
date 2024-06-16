@@ -33,10 +33,10 @@ io.on("connection", (socket) => {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.send('Hello, world!');
 });
 
 server.listen(3001,host, () => {
-  console.log("SERVER RUNNING new.....");
+  console.log("SERVER RUNNING new..... 300 port");
 });
