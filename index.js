@@ -34,9 +34,10 @@ io.on("connection", (socket) => {
 
 
 app.get('/test', (req, res) => {
+  console.log("TEST API CALLED");
   res.send('Hello, world!');
 });
 
 server.listen(3000,host, () => {
-  console.log("SERVER RUNNING ON PORT 3000...........");
+  console.log("SERVER RUNNING ON PORT 3000....test.......");
 });
