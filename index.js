@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://ijchatclient.netlify.app",
+    origin: "http://16.171.24.191",
     methods: ["GET", "POST"],
   },
 });
@@ -39,5 +39,5 @@ app.get('/test', (req, res) => {
 });
 
 server.listen(3000,host, () => { 
-  console.log("SERVER RUNNING ON PORT 3000 ");
+  console.log("SERVER RUNNING ON PORT 3000 new.... ");
 });
