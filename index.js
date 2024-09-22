@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://ec2-13-60-217-221.eu-north-1.compute.amazonaws.com",
+    origin: "https://66effa8d3e2f927fc0948e3d--splendid-moonbeam-72d8b9.netlify.app",
     methods: ["GET", "POST"],
   },
 });
@@ -39,5 +39,5 @@ app.get('/test', (req, res) => {
 });
 
 server.listen(3000,host, () => { 
-  console.log("SERVER RUNNING ON PORT 3000 this is updated new.....");
+  console.log("SERVER RUNNING ON PORT 3000 this is updated new.....today");
 });
